@@ -15,3 +15,6 @@ FROM
     FROM STATION
     ORDER BY LENGTH(CITY) DESC, CITY)
 WHERE ROWNUM = 1;
+
+# the same problem - solution for mysql 
+select city, length(city) from station order by length(city) asc, city limit 1; select city, length(city) from station order by length(city) desc, city limit 1;
