@@ -23,3 +23,9 @@ select city, length(city) from station order by length(city) asc, city limit 1; 
 
 # Find all the city names in the table that starts with a,e,i,o,u
 SELECT DISTINCT city FROM station WHERE city REGEXP "^[aeiou].*";
+
+
+# Display the top 5 max salaries 
+
+Select * from ( Select * from employee order by salary desc ) where rownum<=5;
+
