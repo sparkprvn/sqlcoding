@@ -18,3 +18,8 @@ WHERE ROWNUM = 1;
 
 # the same problem - solution for mysql 
 select city, length(city) from station order by length(city) asc, city limit 1; select city, length(city) from station order by length(city) desc, city limit 1;
+
+
+
+# Find all the city names in the table that starts with a,e,i,o,u
+SELECT DISTINCT city FROM station WHERE city REGEXP "^[aeiou].*";
