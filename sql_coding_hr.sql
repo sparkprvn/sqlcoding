@@ -36,3 +36,9 @@ SELECT E.first_name, E.last_name, E.department_id, D.department_name
    LEFT OUTER JOIN departments D 
      ON E.department_id = D.department_id;
 
+
+SELECT E.first_name AS "Employee Name",
+   M.first_name AS "Manager"
+    FROM employees E 
+      LEFT OUTER JOIN employees M
+       ON E.manager_id = M.employee_id;
