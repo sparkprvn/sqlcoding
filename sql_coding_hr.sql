@@ -29,3 +29,10 @@ SELECT DISTINCT city FROM station WHERE city REGEXP "^[aeiou].*";
 
 Select * from ( Select * from employee order by salary desc ) where rownum<=5;
 
+
+# retrieve employees that dont have a manager
+SELECT E.first_name, E.last_name, E.department_id, D.department_name 
+  FROM employees E 
+   LEFT OUTER JOIN departments D 
+     ON E.department_id = D.department_id;
+
