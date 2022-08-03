@@ -8,3 +8,13 @@ select e.FIRST_NAME, e.LAST_NAME,e.DEPARTMENT_ID,d.DEPARTMENT_NAME from employee
 
 # LEFT OUTER JOIN 
 # SELECT E.first_name AS "Employee Name",M.first_name AS "Manager" FROM employees E  LEFT OUTER JOIN employees M ON E.manager_id = M.employee_id;
+
+
+
+# leetcode 
+# find out the class with more than 5 students 
+
+SELECT class
+FROM Courses
+GROUP BY class
+Having COUNT(*) > 4;
