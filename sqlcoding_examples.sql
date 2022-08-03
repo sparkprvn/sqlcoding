@@ -39,3 +39,25 @@ SELECT class
 FROM Courses
 GROUP BY class
 Having COUNT(*) > 4;
+
+
+# leetcode 
+# find the customer with highest number of orders 
+Input: 
+Orders table:
++--------------+-----------------+
+| order_number | customer_number |
++--------------+-----------------+
+| 1            | 1               |
+| 2            | 2               |
+| 3            | 3               |
+| 4            | 3               |
++--------------+-----------------+
+Output: 
++-----------------+
+| customer_number |
++-----------------+
+| 3               |
++-----------------+
+
+
