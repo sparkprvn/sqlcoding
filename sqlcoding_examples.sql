@@ -13,6 +13,27 @@ select e.FIRST_NAME, e.LAST_NAME,e.DEPARTMENT_ID,d.DEPARTMENT_NAME from employee
 
 # leetcode 
 # find out the class with more than 5 students 
+Input: 
+Courses table:
++---------+----------+
+| student | class    |
++---------+----------+
+| A       | Math     |
+| B       | English  |
+| C       | Math     |
+| D       | Biology  |
+| E       | Math     |
+| F       | Computer |
+| G       | Math     |
+| H       | Math     |
+| I       | Math     |
++---------+----------+
+Output: 
++---------+
+| class   |
++---------+
+| Math    |
++---------+
 
 SELECT class
 FROM Courses
