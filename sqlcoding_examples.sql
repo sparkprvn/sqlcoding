@@ -61,3 +61,5 @@ Output:
 +-----------------+
 
 
+select customer_number from Orders group by order_number  order by order_number DESC limit 1;
+
